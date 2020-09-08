@@ -24,22 +24,9 @@ nav
 
 <style lang="sass">
   nav
+    display: flex
     position: absolute
     width: 100vw
     height: 100vh
     overflow: hidden
-    background: #eee
-  .box
-    height: 100px
-    width: 100px
-    background: black
-    color: white
-
-  .active
-    height: 200px
-    width: 300px
-
-  button
-    padding: 20px
-    background: coral
 </style>

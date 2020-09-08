@@ -1,6 +1,12 @@
-<script>
-  import RootNav from "../components/RootNav/index.svelte";
+<script lang="coffee">
+  import RootNav from "../components/RootNav/index.svelte"
 </script>
 
-<RootNav />
-<slot />
+<template lang="pug">
+  RootNav
+  slot
+</template>
+
+<style lang="sass">
+
+</style>
