@@ -1,0 +1,66 @@
+@font-face
+  font-family: Inter
+  src: url('/Inter.ttf') format('truetype')
+
+@font-face
+  font-family : "Zilla Slab"
+  src: url('/ZillaSlab-Regular.ttf') format('truetype')
+  font-weight : normal
+@font-face
+  font-family : "Zilla Slab"
+  src: url('/ZillaSlab-SemiBold.ttf') format('truetype')
+  font-weight : bold
+
+html
+  font-size: 16px
+  scroll-behavior: smooth
+
+a
+  text-decoration: none
+  font-family: inherit
+  color: inherit
+
+h1, h2, h3, button, .h1, .h2, .h3
+  font-family: "Zilla Slab"
+  font-variation-settings: 'wght' 550
+
+p, i, li, em, strong, span
+  font-family: Inter
+  line-height: 1.6em
+  font-variation-settings: 'wght' 450
+
+h1, .h1
+  font-size: 2.5rem
+h2, .h2
+  font-size: 2rem
+h3, .h3
+  font-size: 1.5rem
+p
+  font-size: 1rem
+.large
+  font-size: 1.2rem
+  font-variation-settings: 'wght' 500
+.small
+  font-size: .9em
+h3.small
+  font-size: 1em
+
+article 
+  > *
+    grid-column-start: 1
+    padding: 24px 82px
+  aside
+    grid-column: 2
+    padding: 24px
+  h1
+    border-bottom: 2px solid var(--ll)
+
+.simplebar-scrollbar:before
+  background: var(--ll)
+  border-radius: 0px
+  opacity: 1
+  right: 0px
+.simplebar-track
+  transform: translateX(-243px) scaleX(1)
+.simplebar-scrollbar.simplebar-visible:before
+  opacity: 1

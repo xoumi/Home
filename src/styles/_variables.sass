@@ -1,0 +1,114 @@
+//Light colors
+$l-white:     #f4f4f4
+$l-white-l:   #cacaca
+$l-white-ll:  #e1e1e1
+$l-white-c:   #3f8cff
+$l-blue:      #f4fbff
+$l-blue-ll:   #caeaff
+$l-blue-l:    #bbdcee
+$l-blue-c:    #009bcc
+$l-green:     #e9fff7
+$l-green-ll:  #c1ffe6
+$l-green-l:   #80a698
+$l-green-c:   #00b57e
+$l-orange:    #fff3ef
+$l-orange-ll: #ffddd2
+$l-orange-l:  #e6c2b7
+$l-orange-c:  #f3734a
+//Dark colors
+$d-black:     #333333
+$l-black-ll:  #515151
+$d-black-l:   #707070
+$d-black-c:   #41afff
+$d-blue:      #18313f
+$d-blue-ll:   #1f3c54
+$d-blue-l:    #5f8ea8
+$d-blue-c:    #55d6ff
+$d-green:     #1f312d
+$d-green-ll:  #254036
+$d-green-l:   #5b8878
+$d-green-c:   #26d9a3
+$d-orange:    #37302e
+$d-orange-ll: #433733
+$d-orange-l:  #997469
+$d-orange-c:  #ff993a
+
+.light //Light theme
+  .base
+    --base:     #{$l-white}
+    --base-l:   #{$l-white-l}
+    --base-ll:  #{$l-white-ll}
+    --base-c:   #{$l-white-c}
+    --base-i:   #{$d-black}
+  .abt
+    --base:      var(--base)
+    --ll:   var(--base-ll)
+    --l:    var(--base-l)
+    --c:    var(--base-c)
+    --i:    var(--base-i)
+    grid-area: abt
+  .dev
+    --base:      #{$l-blue}
+    --ll:   #{$l-blue-ll}
+    --l:    #{$l-blue-l}
+    --c:    #{$l-blue-c}
+    --i:    #{$d-blue}
+    grid-area: dev
+  .life
+    --base:     #{$l-green}
+    --ll:  #{$l-green-ll}
+    --l:   #{$l-green-l}
+    --c:   #{$l-green-c}
+    --i:    #{$d-green}
+    grid-area: life
+  .time
+    --base:     #{$l-orange}
+    --ll:  #{$l-orange-ll}
+    --l:   #{$l-orange-l}
+    --c:   #{$l-orange-c}
+    --i:   #{$d-orange}
+    grid-area: time
+
+.dark //Dark theme
+  .base
+    --base:     #{$d-black}
+    --base-ll:  #{$l-black-ll}
+    --base-l:   #{$d-black-l}
+    --base-c:   #{$d-black-c}
+    --base-i:   #{$l-white}
+  .abt
+    --base: var(--base)
+    --ll:   var(--base-ll)
+    --l:    var(--base-l)
+    --c:    var(--base-c)
+    --i:    var(--base-i)
+    grid-area: abt
+  .dev
+    --base: #{$d-blue}
+    --ll:   #{$d-blue-ll}
+    --l:    #{$d-blue-l}
+    --c:    #{$d-blue-c}
+    --i:    #{$l-blue}
+    grid-area: dev
+  .life
+    --base: #{$d-green}
+    --ll:   #{$d-green-ll}
+    --l:    #{$d-green-l}
+    --c:    #{$d-green-c}
+    --i:    #{$l-green}
+    grid-area: life
+  .time
+    --base:#{$d-orange}
+    --ll:  #{$d-orange-ll}
+    --l:   #{$d-orange-l}
+    --c:   #{$d-orange-c}
+    --i:   #{$l-orange}
+    grid-area: time
+
+\:root
+  --nav-order: '. dev life time abt .'
+  @media(max-width: 960px)
+    --nav-order: "." "dev" "life" "time" "abt" "."
+  --page-separator: 2px
+  --article-width: 800px
+  --sidebar-width: 250px
