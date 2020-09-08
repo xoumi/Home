@@ -1,4 +1,5 @@
-import { writable } from 'svelte/store'
+import { route, isActive } from '@sveltech/routify'
+import { writable, derived, get } from 'svelte/store'
 
 createThemeStore = ->
   store = writable('light')
@@ -8,5 +9,11 @@ createThemeStore = ->
     setDark: () => store.update (n) => 'dark'
     toggle: () => store.update (n) =>
       if n is 'dark' then 'light' else 'dark'
+createActiveSectionStore= ->
+  sections = ['/dev', '/works', '/about']
+  store = derived  route, ($route) =>
+    sections.indexOf sections.find (section) ->
+      get(isActive)(section, false)
 
 export theme = createThemeStore()
+export activeSection = createActiveSectionStore()

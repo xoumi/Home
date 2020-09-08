@@ -1,12 +1,10 @@
 <script lang="coffee">
   import { Router } from "@sveltech/routify";
   import { routes } from "../.routify/routes";
-  import { theme } from './stores/root.coffee';
 </script>
 
 <template lang="pug">
-  div(id="root" class="{$theme}")
-    Router({routes})
+Router({routes})
 </template>
 
 <style global lang="sass">
@@ -19,6 +17,7 @@
   #root
     width: 100vw
     height: 100vh
-    overflow: auto
+    overflow: hidden
     position: relative
+    background: var(--base-ll)
 </style>

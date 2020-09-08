@@ -1,5 +1,7 @@
 ---
 title: About
 subtitle: Details about moi
-index: 4
+id: about
+index: 3
 ---
+<a href="/dev"> move to dev</a>
