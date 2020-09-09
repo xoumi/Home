@@ -1,10 +1,9 @@
 <template lang="pug">
-  .posts.dev
+  ul.posts
     +each('posts as post')
-      .post
-        a(href="{post.href}")
-          p.large {post.title}
-        p.small {post.summary}
+      li.post
+        a.title.large(href="{post.href}") {post.title}
+        p.summary.small {post.summary}
 </template>
 
 <script lang="coffee">
@@ -15,15 +14,13 @@
       href: post.path
     }
   posts = getPosts()
-  console.log {posts}
 </script>
 
 <style lang="sass">
-.posts
-  position: relative
-  max-width: 700px
-  margin: auto
 .post
-  margin: 20px
+  padding: 24px 48px
   color: var(--i)
+  .title
+    display: block
+    margin-bottom: 8px
 </style>

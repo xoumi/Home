@@ -9,7 +9,6 @@ import { layout, route } from '@sveltech/routify'
 import { activeSection } from '../../stores/root.coffee'
 import NavSection from './NavSection.svelte'
 
-console.log {$layout}
 getSections = (layout) ->
   layout.children[1..]
     .map (node) -> {

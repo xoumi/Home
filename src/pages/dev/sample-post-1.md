@@ -8,7 +8,7 @@ summary: |
 
 Once you get the hang of Markdown, it’s an incredibly powerful writing tool which will allow you to write rich content for the web far faster than almost any other method. To get to that point, however, there’s a little bit of a learning curve. We thought we’d put together an all inclusive guide to make that curve a little bit shorter, and potentially teach you a few super-user tricks to Markdown that you might not have known.
 
-# What is Markdown
+## What is Markdown
 
 *Markdown* is a plain text formatting syntax for writers. It allows you to quickly write structured content for the web, and have it seamlessly converted to clean, structured HTML.
 
@@ -24,7 +24,7 @@ The *quick* brown fox, jumped **over** the lazy dog.
 
 With just a couple of extra characters, Markdown makes rich document formatting quick and beautiful.
 
-# Why do Writers Love Markdown so Much?
+## Why do Writers Love Markdown so Much?
 
 “Is that it?” - I hear you ask - “I could just click on a few formatting buttons in most editors and achieve the same thing!”
 
@@ -38,14 +38,14 @@ Markdown allows you to keep your fingers firmly planted on the keyboard as you a
 
 It might seem like a small detail, but it can have a really big effect. Once you start writing in Markdown, it’s really hard to back to the click-fest of the past.
 
-# Basic Markdown Formatting
+## Basic Markdown Formatting
 
 Ok! You’re sold. So how does this work? Let’s dive in:
 
 Markdown was designed with the explicit intention to be easily readable by humans. You should find that most of the syntax is pretty simple and intuitive.
 
 Here are the elements you’ll use most often:
-## Headings
+### Headings
 
 ``` md
 # Heading 1
