@@ -14,7 +14,7 @@ Router({routes})
   @import 'typography'
   @import 'simplebar'
   
-  #root
+  #light, #dark
     width: 100vw
     height: 100vh
     overflow: hidden

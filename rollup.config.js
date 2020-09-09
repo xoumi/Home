@@ -26,6 +26,7 @@ export const config = {
         }
       }),
       mdsvex({
+        layout: './src/components/mdLayout.svelte',
         remarkPlugins: [slug],
         extension: 'md'
       })

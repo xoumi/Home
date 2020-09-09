@@ -1,8 +1,7 @@
 <template lang="pug">
 .navSection(class='{section.id}' class:expand='{$isActive(section.href)}')
   .bg(use:flip='{$activeSection}')
-  a(href='{section.href}' use:flip='{$activeSection}')
-    h2 { section.title }
+  a.h1(use:flip='{$activeSection}' href='{section.href}') { section.title }
   p(use:flip='{$activeSection}') {section.subtitle }
 </template>
 
@@ -17,8 +16,8 @@ export action = null
 
 <style lang="sass">
 .navSection
-  min-width: var(--navSection-width)
   position: relative
+  min-width: var(--navSection-width)
   height: 100%
   display: flex
   justify-content: center
@@ -27,6 +26,9 @@ export action = null
   p
     opacity: 1
     transition: opacity .5s ease-in-out .5s
+  a
+    color: var(--i)
+    transition: color .8s
 .bg
   width: 100%
   height: 100%
@@ -40,7 +42,9 @@ export action = null
     transition: opacity .5s ease-in-out
   a
     position: absolute
-    bottom: 0
-    left: 0
-    transform: scale(2)
+    top: -.2em
+    left: -.1em
+    font-size: 10rem
+    color: var(--ll)
+    pointer-events: none
 </style>

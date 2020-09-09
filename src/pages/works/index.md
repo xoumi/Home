@@ -1,6 +1,1 @@
----
-title: Works
-subtitle: Tinkerings
-id: works
-index: 1
----
+<a href="/dev">go to dev</a>
