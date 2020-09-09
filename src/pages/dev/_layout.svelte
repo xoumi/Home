@@ -4,14 +4,13 @@
 <!-- routify:options index='0'-->
 <template lang="pug">
 main.dev(class:index='{isIndex}')
-  .lineL(use:flip='{isIndex}')
-  .lineR(use:flip='{isIndex}')
+  Lines(trigger="{isIndex}")
   slot 
 </template>
 
 <script lang="coffee">
 import { page } from '@sveltech/routify'
-import flip from '../../plugins/flip.coffee'
+import Lines from '../../components/dividerLinesContainer.svelte'
 
 `$: isIndex = $page.__file.isIndex`
 </script>
@@ -26,14 +25,5 @@ import flip from '../../plugins/flip.coffee'
     color: var(--i)
   .index
     max-width: var(--allPosts-maxWidth)
-  .lineL, .lineR
-    width: var(--dividerLine-width)
-    height: 100%
-    position: absolute
-    background: var(--ll)
-    content: ''
-  .lineL
-    left: 0
-  .lineR
-    right: 0
+
 </style>
