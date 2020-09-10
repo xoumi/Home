@@ -5,8 +5,7 @@ summary: |
   Once you get the hang of Markdown, it’s an incredibly powerful writing tool which will allow you to write rich content for the web far faster than almost any other method. To get to that point
 ---
 
-# {title}
-  It’s no secret that we’re big fans of *Markdown* at Ghost. We built our editor to work with Markdown directly!
+It’s no secret that we’re big fans of *Markdown* at Ghost. We built our editor to work with Markdown directly!
 
 Once you get the hang of Markdown, it’s an incredibly powerful writing tool which will allow you to write rich content for the web far faster than almost any other method. To get to that point, however, there’s a little bit of a learning curve. We thought we’d put together an all inclusive guide to make that curve a little bit shorter, and potentially teach you a few super-user tricks to Markdown that you might not have known.
 
@@ -19,14 +18,10 @@ Back in 2004, Apple pundit John Gruber came up with the idea after becoming frus
 Here’s a quick example of Markdown in action:
 
 ``` The *quick* brown fox, jumped **over** the lazy [dog](https://en.wikipedia.org/wiki/Dog). ```
-
-becomes
-
-The *quick* brown fox, jumped **over** the lazy dog.
-
+becomes The *quick* brown fox, jumped **over** the lazy dog.
 With just a couple of extra characters, Markdown makes rich document formatting quick and beautiful.
 
-## Why do Writers Love Markdown so Much?
+## Why do writers love Markdown so much?
 
 “Is that it?” - I hear you ask - “I could just click on a few formatting buttons in most editors and achieve the same thing!”
 
