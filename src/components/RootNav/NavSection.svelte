@@ -1,8 +1,8 @@
 <template lang="pug">
 .navSection(class='{section.id}' class:expand='{$isActive(section.href)}')
-  .bg(use:flip='{$activeSection}')
-  a.h1(use:flip='{$activeSection}' href='{section.href}') { section.title }
-  p(use:flip='{$activeSection}') {section.subtitle }
+  .bg(use:flip='{$activeSection, duration}')
+  a.h2(use:flip='{$activeSection, duration}' href='{section.href}') { section.title }
+  p(use:flip='{$activeSection, duration}') {section.subtitle }
 </template>
 
 <script lang="coffee">
@@ -11,7 +11,7 @@ import { activeSection } from  '../../stores/root.coffee'
 import flip from '../../plugins/flip.coffee'
 
 export section = null
-export action = null
+duration = 1
 </script>
 
 <style lang="sass">
@@ -27,14 +27,14 @@ export action = null
     opacity: 1
     transition: opacity .5s ease-in-out .5s
   a
-    color: var(--i)
-    transition: color .8s, opacity .8s
+    color: rgba(var(--i), 1)
+    transition: color .8s
 .bg
   width: 100%
   height: 100%
   position: absolute
   z-index: -1
-  background: var(--base)
+  background: rgb(var(--base))
 .expand
   min-width: 100vw
   p
@@ -45,7 +45,6 @@ export action = null
     top: -.2em
     left: -.1em
     font-size: 10rem
-    color: var(--ll)
-    opacity: .5
+    color: rgba(var(--ll), .8)
     pointer-events: none
 </style>

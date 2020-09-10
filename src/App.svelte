@@ -20,5 +20,5 @@ Router({routes})
     height: 100vh
     overflow: hidden
     position: relative
-    background: var(--base-ll)
+    background: rgb(var(--base-ll))
 </style>

@@ -1,7 +1,7 @@
 ---
 title: Why we use Markdown at Ghost pt2
-summary: |
-  Once you get the hang of Markdown, it’s an incredibly powerful writing tool which will allow you to write rich content for the web far faster than almost any other method. To get to that point, however, there’s a little bit of a learning curve. We thought we’d put together an all inclusive guide to make that curve a little bit shorter, and potentially teach you a few super-user tricks to Markdown that you might not have known
+summary: 
+date: 24 May 2019
 ---
 
   It’s no secret that we’re big fans of *Markdown* at Ghost. We built our editor to work with Markdown directly!

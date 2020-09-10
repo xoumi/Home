@@ -2,17 +2,25 @@
 <!-- routify:options subtitle='Loggin\' n bloggin\''-->
 <!-- routify:options id='dev'-->
 <!-- routify:options index='0'-->
+
 <template lang="pug">
 main.dev(class:index='{isIndex}')
-  Lines(trigger="{isIndex}")
-  slot 
+  Lines(trigger="{isIndex}" duration=.5)
+  slot(decorator='{BlogDecorator}') 
 </template>
 
 <script lang="coffee">
 import { page } from '@sveltech/routify'
 import Lines from '../../components/dividerLinesContainer.svelte'
+import BlogDecorator from '../../components/BlogDecorator.svelte'
 
-`$: isIndex = $page.__file.isIndex`
+delay = 320
+isIndex = $page.__file.isIndex
+changeTriggered = (trigger) ->
+  setTimeout ( -> isIndex = trigger
+  ), delay
+`$:changeTriggered($page.__file.isIndex)`
+
 </script>
 
 <style lang="sass">
@@ -22,7 +30,7 @@ import Lines from '../../components/dividerLinesContainer.svelte'
     overflow: visible
     max-width: var(--post-maxWidth)
     margin: auto
-    color: var(--i)
+    color: rgb(var(--i))
   .index
     max-width: var(--allPosts-maxWidth)
 

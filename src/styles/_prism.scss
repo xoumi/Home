@@ -1,6 +1,6 @@
  code[class*="language-"],
  pre[class*="language-"] {
-   color: var(--i);
+   color: rgb(var(--i));
    background: none;
    font-family: 'Cascadia Code', monospace;
    text-align: left;
@@ -23,16 +23,16 @@
  /* Code blocks */
  pre[class*="language-"] {
    padding: 1em 48px;
-   margin: 0.5em 0;
+   margin: 24px 0;
    overflow: auto;
    border-radius: 0.3em;
  }
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-   background: var(--ll);
-   border-top: 2px solid var(--ll);
-   border-bottom: 2px solid var(--ll);
+   background: rgb(var(--ll));
+   border-top: 2px solid rgb(var(--ll));
+   border-bottom: 2px solid rgb(var(--ll));
  }
  
  /* Inline code */
@@ -50,7 +50,7 @@
  }
  
  .token.punctuation {
-   color: var(--i);
+   color: rgb(var(--i));
  }
  
  .token.property,
@@ -81,13 +81,13 @@
  .language-css .token.string,
  .style .token.string,
  .token.variable {
-   color: var(--i);
+   color: rgb(var(--i));
  }
  
  .token.atrule,
  .token.attr-value,
  .token.function {
-   color: var(--c);
+   color: rgb(var(--c));
  }
  
  .token.keyword {
@@ -96,7 +96,7 @@
  
  .token.regex,
  .token.important {
-   color: var(--c);
+   color: rgb(var(--c));
  }
  
  .token.important,
