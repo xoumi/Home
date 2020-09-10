@@ -11,6 +11,7 @@ Router({routes})
   @import 'reset'
   @import 'variables'
   @import 'typography'
+  @import 'blog'
   @import 'simplebar'
   @import 'prism'
   

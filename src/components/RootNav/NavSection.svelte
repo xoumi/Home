@@ -28,7 +28,7 @@ export action = null
     transition: opacity .5s ease-in-out .5s
   a
     color: var(--i)
-    transition: color .8s
+    transition: color .8s, opacity .8s
 .bg
   width: 100%
   height: 100%
@@ -46,5 +46,6 @@ export action = null
     left: -.1em
     font-size: 10rem
     color: var(--ll)
+    opacity: .5
     pointer-events: none
 </style>
