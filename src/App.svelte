@@ -8,12 +8,7 @@ Router({routes})
 </template>
 
 <style global lang="sass">
-  @import 'reset'
-  @import 'variables'
-  @import 'typography'
-  @import 'blog'
-  @import 'simplebar'
-  @import 'prism'
+  @import 'index'
   
   #light, #dark
     width: 100vw

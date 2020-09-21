@@ -44,7 +44,7 @@ Markdown was designed with the explicit intention to be easily readable by human
 Here are the elements you’ll use most often:
 ### Headings
 
-``` md
+```md headings.md
 # Heading 1
 ## Heading 2
 ### Heading 3
@@ -53,7 +53,7 @@ Here are the elements you’ll use most often:
 Headings in Markdown are any line which is prefixed with a # symbol. The number of hashes indicates the level of the heading. One hash is converted to an h1, two hashes to an h2 and so on. There are a total of 6 levels which you can make use of - but for most writing, you’ll rarely ever need more than 3.
 Text
 
-``` md
+```md
 *italic*
 **bold**
 ***bold-italic***

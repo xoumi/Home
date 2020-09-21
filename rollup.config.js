@@ -4,6 +4,7 @@ import { mdsvex } from 'mdsvex'
 import autoPreprocess from 'svelte-preprocess'
 import postcssPresetEnv from 'postcss-preset-env'
 import postcssImport from 'postcss-import'
+import toc from '@jsdevtools/rehype-toc'
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -28,6 +29,7 @@ export const config = {
       mdsvex({
         layout: './src/components/mdLayout.svelte',
         remarkPlugins: [slug],
+        rehypePlugins: [toc],
         extension: 'md'
       })
     ]

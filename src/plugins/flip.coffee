@@ -1,7 +1,7 @@
-import { gsap, Power3 } from 'gsap'
-
 export default (node, params) ->
-  oldRect = node.getBoundingClientRect()
+  oldRect = null
+  window.requestAnimationFrame () ->
+    oldRect = node.getBoundingClientRect()
   window.addEventListener "resize", () ->
     oldRect = node.getBoundingClientRect()
 

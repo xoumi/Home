@@ -1,6 +1,7 @@
 article
+  padding: 80px 0
   h1, h2
-    margin-top: 36px
+    margin-top: 48px
     margin-bottom: 12px
   h1
     padding-top: 80px
@@ -16,3 +17,16 @@ article
   h1, h2, h3, h4, p, ul, ol
     padding-left: 48px
     padding-right: 48px
+
+.toc
+  position: absolute
+  width: calc(calc(100vw - 700px) / 2)
+  max-width: 240px
+  transform: translate(-100%, calc(50vh - 50%))
+  &-link
+    padding: 12px 24px
+    transition: background .5s
+    display: block
+    &:hover 
+      background: rgba(var(--ll), .5)
+      transition: background 0s

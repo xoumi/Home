@@ -1,21 +1,25 @@
 <template lang="pug">
+// routify:options bundle=false
 .scroll-wrapper(data-simplebar)
   article
     .heading
       h1.title {title}
       span.date.small {date}
     slot
+    hr
 </template>
 
-<script lang="coffee">
-  import 'simplebar'
-  export title = ''
-  export date = ''
+<script>
+  import { onMount } from 'svelte'
+
+  export let title = ''
+  export let date = ''
+  export const summary = ''
 </script>
 
-<style>
+<style global>
 .scroll-wrapper { height: 100% }
-.title { margin-bottom: 12px; }
 .heading { margin-bottom: 24px; text-align: center }
-.date { display: block; }
+.heading .title { margin-bottom: 12px; }
+article .date { display: block; }
 </style>

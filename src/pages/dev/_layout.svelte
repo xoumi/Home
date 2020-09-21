@@ -6,11 +6,14 @@
 <template lang="pug">
 main.dev(class:index='{isIndex}')
   Lines(trigger="{isIndex}" duration=.5)
+  +if('$isChangingPage')
+    h1.loading(transition:fade) LOADING PAGE
   slot(decorator='{BlogDecorator}') 
 </template>
 
 <script lang="coffee">
-import { page } from '@sveltech/routify'
+import { page, isChangingPage } from '@sveltech/routify'
+import { fade } from 'svelte/transition';
 import Lines from '../../components/dividerLinesContainer.svelte'
 import BlogDecorator from '../../components/BlogDecorator.svelte'
 
@@ -33,5 +36,7 @@ changeTriggered = (trigger) ->
     color: rgb(var(--i))
   .index
     max-width: var(--allPosts-maxWidth)
+  .loading
+    position: absolute
 
 </style>

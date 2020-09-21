@@ -1,5 +1,5 @@
 <template lang="pug">
-nav(style="--offset: {$activeSection}")
+nav(style="--offset: {$activeSection == -1 ? 0 : $activeSection - 1}")
   +each('sections as section')
     NavSection({section})
 </template>
@@ -29,8 +29,10 @@ sections = getSections $layout
 <style lang="sass">
 nav
   display: flex
-  position: absolute
-  width: 100%
+  justify-content: center
   height: 100vh
+  width: 100vw
+  position: absolute
+  top: 0
   transform: translateX(calc(var(--navSection-width) * var(--offset) * -1))
 </style>
